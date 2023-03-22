@@ -40,6 +40,9 @@ hr {
     top: 10%;
 
 }
+#back-img.hidden {
+    visibility: hidden;
+}
 
 
 .card-menu {
@@ -172,6 +175,10 @@ hr {
     box-shadow: 1px 1px 1px black;
 
 }
+
+.second {
+   background:  linear-gradient(#fff, #F94A29);
+}
     
 .teacherM-image {
     width: 7.5rem;
@@ -249,6 +256,11 @@ hr {
     align-items: center;
 }
 
+.footer-head {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
 .footer-section p {
     color: #ccc;
 }
@@ -261,13 +273,47 @@ hr {
     margin: 2rem;
 }
 
-@media (max-width: 580px) {
+.input-group-text {
+    background-color: #FCE22A;
+    font-weight: bold;
+}
+
+@media (max-width: 760px) {
 
     #footer-head {
         padding: 5% 5%;
     
     }
+    
+    .input-group {
+        display: flex;
+        flex-direction: column;
+    }
 
+    #userName,
+    #userMail,
+    #userMessage,
+    #userMessageText {
+       width: 100%;
+       border-radius: 8px;
+       margin: 10px;
+    }
+
+    #userMessage {
+        justify-content: center;
+        margin-bottom: 0;
+    }
    
+    #navbarContent {
+        background-color: #D61355;
+        text-align: center;
+        text-transform: uppercase;
+  
+    }
+
+    .nav-item a {
+        color: #fff;
+    }
+
 }
    

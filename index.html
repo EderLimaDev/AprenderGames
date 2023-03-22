@@ -27,13 +27,13 @@
 
           <a class="navbar-brand ms-3" href="#"><img id="logo" src="images/logoTipo.png" alt="Logo Aprender Games" width="200px" height="100px"></a>
 
-            <button class="navbar-toggler me-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 
                 <span class="navbar-toggler-icon"></span>
 
             </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarContent">
 
             <ul class="navbar-nav ms-auto me-5">
                 <li class="nav-item">
@@ -239,19 +239,18 @@
     <!-- Footer Section  -->
 
     <div class="footer-section">
-        <div class="d-grid gap-2 col-8 mx-auto">
-            <h5 class="footer-head">Conte-nos como foi sua experiência!!</h5>
+        <div class="footer-head d-grid gap-2 col-8 mx-auto">
+            <h5>Conte-nos como foi sua experiência!!</h5>
         </div>
 
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Nome do Usuário" aria-label="Username">
-            <span class="input-group-text"> Seu @</span>
-            <input type="text" class="form-control" placeholder="E-mail" aria-label="Server">
+            <input id="userName" type="text" class="form-control" placeholder="Nome do Usuário" aria-label="Username">
+            <input id="userMail" type="text" class="form-control" placeholder="E-mail" aria-label="Server">
           </div>
           
-        <div class="input-group ">
-            <span class="input-group-text">Digite seu texto:</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
+        <div class="input-group">
+            <span id="userMessage" class="input-group-text">Mensagem</span>
+            <textarea id="userMessageText" class="form-control" aria-label="With textarea"></textarea>
         </div>
 
         <div class="d-grid gap-2 col-6 mx-auto">
@@ -266,6 +265,6 @@
 
 
    
-    
+<script src="script/index.js"></script>    
 </body>
 </html>
