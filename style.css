@@ -20,6 +20,8 @@ hr {
     display: flex;
 }
 
+
+
 .pink-bg {
     width: 100%;
     height: 270px;
@@ -38,8 +40,10 @@ hr {
     z-index: -1;
     left: 25%;
     top: 10%;
+    animation: backToFront 3s ease;
 
 }
+
 #back-img.hidden {
     visibility: hidden;
 }
@@ -66,16 +70,20 @@ hr {
 
 .games-menu {
     background-color: #2F58CD;
+    animation: rotateX 3s ease;
 }
 
 .project-menu {
     background-color: #F94A29;
+    animation: rotateX 3s ease reverse;
 }
 .about-menu {
     background-color: #30E3DF;
+    animation: rotateX 3s ease;
 }
 .contact-menu {
     background-color: #FCE22A;
+    animation: rotateX 3s ease reverse;
 }
 
 .col-lg-3 h1 {
@@ -109,8 +117,31 @@ hr {
    
 }
 
+@media (min-width: 768px) {
+        
+    .itemJogos:hover {
+        border-bottom: 4px solid #2F58CD;
+        border-radius: 50%;
+    }
+    .itemProjeto:hover {
+        border-bottom: 4px solid #F94A29 ;
+        border-radius: 50%;
+    }
 
-@media (max-width: 766px) {
+    .itemSobre:hover {
+        border-bottom: 4px solid #30E3DF;
+        border-radius: 100%;
+    }
+    .itemContato:hover {
+        border-bottom: 4px solid #FCE22A ;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
 
    .navbar-brand img {
         width: 150px;
@@ -120,7 +151,7 @@ hr {
     .pink-bg {
         height: 570px;
     }
-    
+
 }
 
 
@@ -278,7 +309,7 @@ hr {
     font-weight: bold;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
 
     #footer-head {
         padding: 5% 5%;
@@ -294,7 +325,7 @@ hr {
     #userMail,
     #userMessage,
     #userMessageText {
-       width: 100%;
+       width: 90%;
        border-radius: 8px;
        margin: 10px;
     }
@@ -316,4 +347,26 @@ hr {
     }
 
 }
-   
+
+
+@keyframes backToFront {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+    
+}
+
+@keyframes rotateX  {
+    from {
+      left: 0;
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
+}
+

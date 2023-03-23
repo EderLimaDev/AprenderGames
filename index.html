@@ -14,7 +14,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
+    <script src="script/index.js" async></script> 
 
     <title>Aprender Games</title>
 </head>
@@ -36,19 +36,19 @@
           <div class="collapse navbar-collapse" id="navbarContent">
 
             <ul class="navbar-nav ms-auto me-5">
-                <li class="nav-item">
+                <li class="nav-item itemJogos">
                     <a class="nav-link" href="">Jogos</a>
                 </li>
                
-                <li class="nav-item">
+                <li class="nav-item itemProjeto">
                     <a class="nav-link" href="">Projeto</a>
                 </li>
                 
-                <li class="nav-item">
+                <li class="nav-item itemSobre">
                     <a class="nav-link" href="">Sobre</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item itemContato">
                     <a class="nav-link" href="">Contato</a>
                 </li>
 
@@ -70,7 +70,7 @@
 
         <div class="row row-cols-1 row-cols-md-2 g-1 g-lg-1 choose-menu">
 
-                <div class="col-lg-3 col-md-6">
+                <div class="menuJogos col-lg-3 col-md-6">
 
                     <div class="games-menu">
                         
@@ -254,7 +254,7 @@
         </div>
 
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button id="btn-enviar" type="button" class="btn btn-success btn-lg">ENVIAR</button>
+            <button id="btn-enviar" type="button" onclick="sendContact()" class="btn btn-success btn-lg">ENVIAR</button>
         </div>
 
 
@@ -265,6 +265,6 @@
 
 
    
-<script src="script/index.js"></script>    
+   
 </body>
 </html>
