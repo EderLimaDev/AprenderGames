@@ -7,7 +7,7 @@
 hr {
     border-style: dotted none none none;
     height: 4px;
-    width: 7%;
+    width: 15%;
     border-color: #D61355;;
     border-width: 7px;
     margin: 0 45%;
@@ -65,25 +65,35 @@ hr {
     padding: 5% 6%;
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
+.games-menu:hover, 
+.project-menu:hover,
+.contact-menu:hover,
+.about-menu:hover {
+    transform: scale(1.1);
+}
+
 
 
 .games-menu {
     background-color: #2F58CD;
-    animation: rotateX 3s ease;
+   
+    
 }
 
 .project-menu {
     background-color: #F94A29;
-    animation: rotateX 3s ease reverse;
+    
 }
 .about-menu {
     background-color: #30E3DF;
-    animation: rotateX 3s ease;
+  
 }
 .contact-menu {
     background-color: #FCE22A;
-    animation: rotateX 3s ease reverse;
+
 }
 
 .col-lg-3 h1 {
@@ -104,6 +114,7 @@ hr {
     align-items: center;
     justify-content: center;
     user-select: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
 }
 
@@ -137,6 +148,7 @@ hr {
         border-radius: 50%;
     }
 
+   
 }
 
 
@@ -149,10 +161,38 @@ hr {
     }
 
     .pink-bg {
-        height: 570px;
+        height: 150px;
     }
 
+    
 }
+
+/* Mobile  */
+
+@media (width <= 400px) {
+    .games-menu, 
+    .project-menu,
+    .contact-menu,
+    .about-menu  {
+        width: 20vh;
+    }
+    .circle {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .row {
+        padding: 15% 9%;
+    }
+    .bx {
+        font-size: 40px;
+    }
+}
+
+
+
+
+
 
 
 /* Project Section */
@@ -328,6 +368,7 @@ hr {
        width: 90%;
        border-radius: 8px;
        margin: 10px;
+       
     }
 
     #userMessage {
@@ -360,13 +401,5 @@ hr {
     
 }
 
-@keyframes rotateX  {
-    from {
-      left: 0;
-    }
 
-    to {
-        transform: rotateX(360deg);
-    }
-}
 
