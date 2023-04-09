@@ -37,7 +37,7 @@
 
             <ul class="navbar-nav ms-auto me-5">
                 <li class="nav-item itemJogos">
-                    <a class="nav-link" href="">Jogos</a>
+                    <a class="nav-link" href="gamesPage.html">Jogos</a>
                 </li>
                
                 <li class="nav-item itemProjeto">
@@ -71,7 +71,8 @@
         <div class="row row-cols-2 row-cols-md-2 g-1 g-lg-1 choose-menu">
 
                 <div class="menuJogos col-lg-3 col-md-6">
-
+                  
+                  <a href="gamesPage.html">
                     <div class="games-menu">
                         
                         <h1>JOGOS</h1>
@@ -81,6 +82,7 @@
                         </div>
 
                     </div>
+                  </a>
 
                         
                 </div>
@@ -252,20 +254,35 @@
             <h5>Conte-nos como foi sua experiência!!</h5>
         </div>
 
-        <div class="input-group mb-3">
-            <input id="userName" type="text" class="form-control" placeholder="Nome do Usuário" aria-label="Username">
-            <input id="userMail" type="text" class="form-control" placeholder="E-mail" aria-label="Server">
-          </div>
+        <form class="formContact" action="https://api.staticforms.xyz/submit" method="post">
           
-        <div class="input-group">
-            <span id="userMessage" class="input-group-text">Mensagem</span>
-            <textarea id="userMessageText" class="form-control" aria-label="With textarea"></textarea>
-        </div>
 
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button id="btn-enviar" type="button" onclick="sendContact()" class="btn btn-success btn-lg">ENVIAR</button>
-        </div>
+          <div id="formName">
+            <span><i class='bx bxs-user' ></i></span>
+            <input id="userNameText" type="text" placeholder="Nome do Usuário" aria-label="Username">
+          </div>
 
+          <div id="formEmail">
+            <span><i class='bx bxs-envelope'></i></span>
+            <input id="userMailText" type="email"  placeholder="E-mail" aria-label="Server">
+          </div>
+
+          <div id="formMsg">
+              <span id="userMessage">Escreva sua Mensagem</span>
+              <textarea id="userMessageText" aria-label="With textarea"></textarea>
+          </div>
+
+
+
+          <div class="d-grid gap-2 col-6 mx-auto">
+              <button id="btn-enviar" type="submit" class="btn btn-success btn-lg">ENVIAR</button>
+          </div>
+
+
+          <input type="hidden" name="AccessKey" value="d95b96fb-306a-4077-809f-321f7a337bb9">
+          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index.html">
+        </form>
+        
 
         <p>@Aprender Games 2023</p>
 
