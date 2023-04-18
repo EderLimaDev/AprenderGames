@@ -195,7 +195,8 @@ a {
     .circlePageGames {
        background-color: white;
     }
-    
+
+  
 }
 
 
@@ -219,6 +220,7 @@ a {
 .project-objective {
     display: flex;
     margin: 1rem 0 2rem;
+    align-items: center;
 }
 
 #project-objective {
@@ -231,6 +233,7 @@ a {
     width: 15rem;
     border-radius:0 0 12px 12px;
     background: linear-gradient(#fff, #FCE22A);
+
 }
 
 .teacherF-image {
@@ -280,6 +283,24 @@ a {
         padding-top: 15px;
     }
 
+
+    .headerLogo {
+        flex-direction: column;
+    }
+
+    .brand{
+        width: 55%;
+    }
+    
+    #titleGamesPage img {
+        height: 100px;
+    }
+
+    #titleGamesPage {
+        justify-content: center;
+        margin: auto;
+    }
+
 }
   
 
@@ -316,7 +337,7 @@ a {
 @media (max-width: 580px) {
 
     .carousel-item {
-        height: 220px;
+        height: 260px;
     }
 
     .img-fluid {
@@ -354,8 +375,8 @@ a {
     margin: 20px;
 }
 
-.bxs-user,
-.bxs-envelope {
+.userIcon,
+.mailIcon {
     font-size: 1.5rem;
     padding: 0 10px;
 }
@@ -378,6 +399,7 @@ a {
     background-color: #000;
     text-align: center;
     color: #ccc;
+    border-radius: 12px 12px 0 0;
 }
 
 #userMessageText {
@@ -393,7 +415,7 @@ a {
 }
 
 .footer-head h5 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .footer-section p {
@@ -413,7 +435,6 @@ a {
     
     .formContact {
         width: 100%;
-
      }
 
    
@@ -427,6 +448,11 @@ a {
     .nav-item a {
         color: #fff;
     }
+
+    .footer-section p {
+    color: #000;
+}
+
 
 }
 
@@ -446,14 +472,21 @@ a {
 
 /* TELA JOGOS */
 
+.headerLogo {
+    display: flex;
+    background-color: #c4c9c2;
+}
+
+
 .brand img {
     width: 200px;
-    height: 100px;
 }
 
 #titleGamesPage {
     text-align: center;
+    width: 68%;
 }
+
 
 .card {
     margin: 5%;
@@ -474,32 +507,10 @@ a {
 }
 
 .mainContainer {
+    background-color: #D61355;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.circlePageGames {
-    position: absolute;
-    background-color: #D61355;
-    z-index: -2;
-    width: 23rem;
-    height: 23rem;
-    border-radius: 100%;
-    right: 0;
-
-}
-
-.trianglePageGames {
-    position: absolute;
-    background-color: #D61355;
-    z-index: -2;
-    width: 36rem;
-    height: 36rem;
-    transform: rotate(-55deg);
-    top: 300px;
-    left: 150px;
-
 }
