@@ -419,7 +419,7 @@ a {
 }
 
 .footer-section p {
-    color: #ccc;
+    color: #000;
 }
 
 #btn-enviar {
@@ -449,9 +449,9 @@ a {
         color: #fff;
     }
 
-    .footer-section p {
-    color: #000;
-}
+    #logoImg {
+        width: 8.5rem;
+    }
 
 
 }
@@ -472,19 +472,27 @@ a {
 
 /* TELA JOGOS */
 
-.headerLogo {
-    display: flex;
-    background-color: #c4c9c2;
+#gamesBody {
+    background-color: #D61355;
 }
 
+.headerLogo {
+    display: flex;
+    
+}
 
 .brand img {
-    width: 200px;
+    width: 12.5rem;
 }
 
 #titleGamesPage {
-    text-align: center;
-    width: 68%;
+    margin: 0 7%;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    justify-content: center;
+
 }
 
 
@@ -507,7 +515,6 @@ a {
 }
 
 .mainContainer {
-    background-color: #D61355;
     text-align: center;
     display: flex;
     flex-direction: row;

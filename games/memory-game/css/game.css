@@ -1,0 +1,118 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 100vh;
+    background-color: #333;
+    background-image: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-position:0ch;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.8);
+    min-width: 800px;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 1.9rem;
+    margin: 0 0 30px;
+    border-radius: 5px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: calc(80%);
+    background-repeat: no-repeat;
+    background-position: center;  
+    border-radius: 5px;
+    border: 2px solid #333;
+    transition: all 400ms ease;
+}
+
+.front {
+    transform: rotateY(180deg);
+    
+}
+
+.back {
+    background-image: url(../imgs/menino.png);
+    background-color: #333;
+    backface-visibility: hidden;
+}
+
+.revealCard {
+    transform: rotateY(180deg);
+}
+
+.disableCard {
+    filter: saturate(0);
+    opacity: 0.5;
+}
+
+.message {
+    height: 9rem;
+    width: 30.5rem;
+    border-radius: 12px;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    background-color: yellow;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.alertMsg {
+    font-size: 3rem;
+    display: block;
+    font-weight: bold;
+}
+
+.reloadBtn {
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(33, 219, 33);
+    margin: 3%;
+}
+
+.playerId {
+    font-size: 1.5rem;
+    color: red;
+}
+.reloadBtn:hover {
+    transform: scale(1.5,1.5);
+}
