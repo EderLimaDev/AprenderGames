@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Jogo da Velha</title>
+
+     <!-- Boxicons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+   <!--CSS-->
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="stats">
+        <div class="arrow_back"> <a href="../../gamesPage.html"><i class='bx bxs-left-arrow-square' style='color:#ffffff'  ></i></a></div>
+        <div class="stats_user">
+            <h3 class="player_name">JOGADOR</h3>
+            <span class="score">0</span>
+        </div>
+        <div class="stats_computer">
+            <h3 class="player_name">Computador</h3>
+            <span class="score">0</span>
+        </div>
+    </div>
+    <div class="board">
+        <div class="casa"></div>
+        <div class="casa"></div>
+        <div class="casa"></div>
+        <div class="casa"></div>
+        <div class="casa"></div>
+        <div class="casa"></div>
+        <div class="casa"></div>
+        <div class="casa"></div>
+        <div class="casa"></div>
+    </div>
+    <h1 class="msg"></h1>
+    <div class="start">
+        <h3>Escolha X ou O</h3>
+        <br><br>
+        <span>X</span>
+        <span>O</span>
+    </div>
+
+    
+    <script src='app.js'></script>
+</body>
+</html>
