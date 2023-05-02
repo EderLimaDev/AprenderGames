@@ -30,7 +30,8 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	height: 100px;
-	margin-right: 50px;
+	margin-right: 5px;
+	margin-left: 30px;
 }
 
 .stats_computer {
@@ -39,7 +40,7 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	height: 100px;
-	margin-left: 50px;
+	margin-left: 20px;
 }
 
 .player_name {
@@ -112,16 +113,3 @@ body{
 	color: #fff;
 }
 
-.btn_div {
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    background-color: #2a3990;
-}
-
-
-.returnBtn {
-    color: #000;
-    background-color: #F06292;
-    
-}

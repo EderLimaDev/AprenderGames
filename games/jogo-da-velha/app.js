@@ -223,8 +223,3 @@ $(document).ready(function() {
 	};
 });
 
-const resetBtn = $('.resetBtn');
-
-resetBtn.addEventListener('click', () => {
-    window.location.reload();
-})

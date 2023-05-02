@@ -338,13 +338,14 @@ a {
 @media (max-width: 580px) {
 
     .carousel-item {
-        height: 16.25rem;
+        height: 19.25rem;
     }
 
     .img-fluid {
         width: 25%;
       
     }
+
 
 }
   
@@ -458,6 +459,10 @@ a {
         padding-bottom: 2.5rem;
     }
     
+    .carousel-item {
+        height: 19.25rem;
+    }
+
 
 
 }
@@ -488,7 +493,7 @@ a {
 }
 
 .brand img {
-    width: 12.5rem;
+    width: 11.5rem;
 }
 
 #titleGamesPage {
