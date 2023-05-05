@@ -263,22 +263,22 @@
             <h3>Conte-nos como foi sua experiência!!</h3>
         </div>
 
-        <form class="formContact" action="https://api.staticforms.xyz/submit" method="post">
+        <form class="formContact" action="https://formsubmit.co/aprendergames@gmail.com" method="POST">
           
 
           <div id="formName">
             <span><i class='bx bxs-user userIcon' ></i></span>
-            <input id="userNameText" type="text" placeholder="Nome do Usuário" aria-label="Username">
+            <input id="userNameText" type="text" name="Nome" placeholder="Nome do Usuário" aria-label="Username" required>
           </div>
 
           <div id="formEmail">
             <span><i class='bx bxs-envelope mailIcon'></i></span>
-            <input id="userMailText" type="email"  placeholder="E-mail" aria-label="Server">
+            <input id="userMailText" type="email"  name="Email" placeholder="E-mail" aria-label="Server" required>
           </div>
 
           <div id="formMsg">
               <span id="userMessage">Escreva sua Mensagem</span>
-              <textarea id="userMessageText" aria-label="With textarea"></textarea>
+              <textarea id="userMessageText" name="mensagem" aria-label="With textarea" required></textarea>
           </div>
 
 
@@ -288,8 +288,8 @@
           </div>
 
 
-          <input type="hidden" name="AccessKey" value="d95b96fb-306a-4077-809f-321f7a337bb9">
-          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index.html">
+          <input type="hidden" name="_next" value="https://ederlimadev.github.io/AprenderGames/thanks.html">
+          
         </form>
         
 
