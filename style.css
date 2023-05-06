@@ -200,9 +200,25 @@ a {
   
 }
 
+/* Botão para top */
+.scroll-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding:  7px 12px;
+    background: #2A3990;
+    border-radius: 12px;
+    opacity: 0;
+}
 
-
-
+.scroll-btn i{
+    font-size: 40px;
+    color: #fff;
+    
+}
+.scroll-btn.active{
+    opacity: 1;
+}
 
 
 

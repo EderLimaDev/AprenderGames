@@ -116,3 +116,10 @@ header {
 .reloadBtn:hover {
     transform: scale(1.5,1.5);
 }
+
+.arrow_back {
+    font-size: 3.5rem;
+    left: 20px;
+    position: absolute;
+    top: 5%;
+}
