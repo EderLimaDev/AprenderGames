@@ -209,6 +209,7 @@ a {
     background: #2A3990;
     border-radius: 12px;
     opacity: 0;
+    z-index: 5;
 }
 
 .scroll-btn i{
